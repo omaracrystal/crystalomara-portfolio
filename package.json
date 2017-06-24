@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "6.10.3"
+    "node": "^6.10.3"
   },
   "dependencies": {
+    "gulp": "^3.9.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
