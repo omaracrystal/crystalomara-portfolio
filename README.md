@@ -1,12 +1,14 @@
-#Crystal's Out of this World Portfolio
+# Crystal's Out of this World Portfolio
 
-##Description
+## Description
 A collection of my work built with React. 
 
-##Technologies
+## Technologies
 - React
 - Redux
-- SASS
+- Javascript
+- Sass
+- Heroku
 - Sketch
 
 ![alt text](src/images/portfolio-sketch-mobile-1.png)
