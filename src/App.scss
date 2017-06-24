@@ -1,26 +1,247 @@
 @import "styles/colors";
 
-.App {
-  text-align: center;
+@-webkit-keyframes glow {
+  to {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05) inset, 0px 0px 20px $highlight;
+  }
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+html {
+  font-size: 62.5%;
 }
 
-.App-header {
-  background-color: $primary-color;
-  height: 150px;
-  padding: 20px;
-  color: white;
+body {
+  background-color: $black;
+  color: $white;
+  font-family: "Avenir Next" !important;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: .3rem;
 }
 
-.App-intro {
-  font-size: large;
+a {
+  color: $white;
+  cursor: pointer;
+  text-decoration: none !important;
+
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    color: $black;
+  }
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+hr {
+  border: .5px solid $black;
+  width: 98%;
+}
+
+button.omara {
+  background: #ffffff;
+  background-image: radial-gradient(50% 50%, #a59797 30%, #ffffff 100%);
+  border: 1px solid $white;
+  border-radius: 50%;
+}
+
+.white-text {
+  color: $white;
+
+  &:hover,
+  &:visited,
+  &:active,
+  &:focus {
+    color: $white;
+  }
+}
+
+.space-background {
+  background-color: $black;
+}
+
+.fixed-center {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.globe-black {
+  animation: glow 3s infinite alternate;
+  background: url("./images/img-noise-800x800.png");
+  background-size: contain;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.globe-gradient {
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.45) 54%, rgba(0, 0, 0, 0.45) 100%);
+  border-radius: 50%;
+  opacity: .4;
+  z-index: 1;
+}
+
+.home {
+
+  button.omara {
+    height: 2.6rem;
+    margin-left: .5rem;
+    margin-right: -.7rem;
+    width: 2.6rem;
+  }
+
+  .content-wrapper {
+    z-index: 2;
+  }
+
+  .globe {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 288px;
+    justify-content: space-between;
+    width: 288px;
+  }
+
+  .group {
+    text-align: center;
+    width: 100%;
+
+    .title-name {
+      font-size: 2.5rem;
+      letter-spacing: .4rem;
+    }
+
+    .title-job {
+      font-size: 1.55rem;
+    }
+  }
+
+  .menu-link {
+    font-size: 2.4rem;
+  }
+}
+
+.about,
+.work {
+  align-items: center;
+  display: flex;
+  height: 98vh;
+  flex-direction: column;
+  justify-content: space-around;
+
+  button.omara {
+    height: 1.6rem;
+    margin-right: -.5rem;
+    margin-left: .2rem;
+    padding-bottom: .2rem;
+    width: 1.6rem;
+  }
+
+  .content-wrapper {
+    align-items: center;
+    display: flex;
+    height: 345px;
+    flex-direction: column;
+    width: 288px;
+    z-index: 1;
+
+
+    .about-pic {
+      margin-bottom: 2rem;
+      width: 135px;
+    }
+
+    .about-text {
+      color: $white;
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-align: center;
+      width: 99%;
+
+    }
+  }
+
+  .globe {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 388px;
+    justify-content: space-between;
+    width: 388px;
+  }
+
+  #menu-about-link {
+    font-size: 3rem;
+    letter-spacing: .8rem;
+  }
+
+  #menu-work-link {
+    font-size: 2rem;
+    letter-spacing: .6rem;
+  }
+}
+
+.contact-wrapper {
+  font-size: 2rem;
+  margin-bottom: .2rem;
+  margin-top: .5rem;
+
+  .fa {
+    padding: .4rem 2rem;
+  }
+}
+
+.work {
+  .content-wrapper {
+    justify-content: space-around;
+  }
+
+  #menu-work-link {
+    font-size: 3rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    text-align: left;
+  }
+
+  .technologies-list {
+    font-size: 1rem;
+    margin-left: -3rem;
+  }
+
+  .work-header-title {
+    border-left: 1px solid $white;
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  .work-header-wrapper {
+    align-items: baseline;
+    border-bottom: 1px solid $white;
+    display: flex;
+    padding-top: 1.5rem;
+  }
+
+  .work-project-info-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+
+  .work-project-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: .5rem;
+  }
+
+  .work-project-title {
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 1.5rem;
+    width: 68%;
+    z-index: 1;
+  }
 }
