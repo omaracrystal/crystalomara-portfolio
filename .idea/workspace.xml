@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4b4187a-5c3f-434b-9755-2cf6d502215d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-    </list>
+    <list default="true" id="d4b4187a-5c3f-434b-9755-2cf6d502215d" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,8 +74,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="30">
+              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -102,6 +100,14 @@
       <find>aboutPic</find>
       <find>image</find>
       <find>im</find>
+      <find>redun</find>
+      <find>redu</find>
+      <find>redux</find>
+      <find>redux-</find>
+      <find>redux-th</find>
+      <find>redux-thu</find>
+      <find>redux-thun</find>
+      <find>redux-thunk</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -327,12 +333,12 @@
       <workItem from="1498278642222" duration="10000" />
       <workItem from="1498278697529" duration="14000" />
       <workItem from="1498278732278" duration="559000" />
-      <workItem from="1498279316120" duration="8899000" />
+      <workItem from="1498279316120" duration="9049000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10987000" />
+    <option name="totallyTimeSpent" value="11137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="428" y="34" width="844" height="676" extended-state="0" />
@@ -644,8 +650,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="30">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding />
         </state>
       </provider>
