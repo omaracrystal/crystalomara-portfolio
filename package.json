@@ -2,19 +2,14 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "^6.10.3"
-  },
   "dependencies": {
-    "gulp": "^3.9.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "react-router-redux": "^5.0.0-alpha.6",
-    "redux": "^3.7.0",
-    "redux-thunk": "^2.2.0"
+    "redux": "^3.7.0"
   },
   "devDependencies": {
     "node-sass-chokidar": "0.0.3",
@@ -22,7 +17,6 @@
     "react-scripts": "1.0.7"
   },
   "scripts": {
-    "postinstall": "npm run build",
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
