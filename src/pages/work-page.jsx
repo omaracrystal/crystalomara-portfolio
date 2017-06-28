@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import aboutPic from '../images/about-pic.jpg';
+
+let aboutPic = 'https://s3-us-west-2.amazonaws.com/xgrioux-portfolio-images/about-pic.4eec3835.jpg';
 
 export default () => (
-    <div className="work fixed-center">
+    <div className="work-page-container fixed-center">
 
         <Link to="/" className="title-name white-text">
             CRYSTAL
@@ -12,9 +13,9 @@ export default () => (
         </Link>
 
         <div className="work-header-wrapper">
-            <a href="/work" id="menu-work-link" className="menu-link white-text">
+            <span id="menu-work-link" className="menu-link white-text">
                 work
-            </a>
+            </span>
             <div className="work-header-title">
                 DEVELOPMENT
             </div>

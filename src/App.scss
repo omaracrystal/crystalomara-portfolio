@@ -66,6 +66,21 @@ button.omara {
   transform: translate(-50%, -50%);
 }
 
+.globe {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90vh;
+  height: 90vh;
+  border-radius: 50%;
+
+  @media (max-width: $mq-tablet) and (orientation:portrait) {
+    height: 90vw;
+    width: 90vw;
+  }
+}
+
 .globe-black {
   animation: glow 3s infinite alternate;
   background: url("./images/img-noise-800x800.png");
@@ -81,7 +96,7 @@ button.omara {
   z-index: 1;
 }
 
-.home {
+.home-page-container {
 
   button.omara {
     height: 2.6rem;
@@ -92,15 +107,6 @@ button.omara {
 
   .content-wrapper {
     z-index: 2;
-  }
-
-  .globe {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 288px;
-    justify-content: space-between;
-    width: 288px;
   }
 
   .group {
@@ -122,11 +128,11 @@ button.omara {
   }
 }
 
-.about,
-.work {
+.about-page-container,
+.work-page-container {
   align-items: center;
   display: flex;
-  height: 98vh;
+  //height: 98vh;
   flex-direction: column;
   justify-content: space-around;
 
@@ -150,6 +156,7 @@ button.omara {
     .about-pic {
       margin-bottom: 2rem;
       width: 135px;
+      height: auto;
     }
 
     .about-text {
@@ -158,17 +165,12 @@ button.omara {
       font-weight: 400;
       text-align: center;
       width: 99%;
-
     }
   }
 
   .globe {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 388px;
-    justify-content: space-between;
-    width: 388px;
+    width: 75vh;
+    height: 75vh;
   }
 
   #menu-about-link {
@@ -192,7 +194,7 @@ button.omara {
   }
 }
 
-.work {
+.work-page-container {
   .content-wrapper {
     justify-content: space-around;
   }

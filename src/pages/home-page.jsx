@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Home = props => (
 
-    <div id="home" className="home">
+    <div className="home-page-container">
 
         <div className="globe fixed-center content-wrapper">
 

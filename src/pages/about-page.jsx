@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import aboutPic from '../images/about-pic.jpg';
 
 export default () => (
-    <div className="about fixed-center">
+    <div className="about-page-container fixed-center">
 
         <Link to="/" className="title-name white-text">
             CRYSTAL
