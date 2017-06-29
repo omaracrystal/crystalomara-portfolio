@@ -82,7 +82,7 @@ button.omara {
 }
 
 .globe-black {
-  animation: glow 3s infinite alternate;
+  //animation: glow 3s infinite alternate;
   background: url("./images/img-noise-800x800.png");
   background-size: contain;
   border-radius: 50%;
@@ -90,7 +90,7 @@ button.omara {
 }
 
 .globe-gradient {
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.45) 54%, rgba(0, 0, 0, 0.45) 100%);
+  background: radial-gradient(ellipse at center, #f7f6f4 0%,#090c06 71%,#0c0a04 85%,#0c0a04 93%,#090a05 100%);
   border-radius: 50%;
   opacity: .4;
   z-index: 1;
@@ -132,7 +132,7 @@ button.omara {
 .work-page-container {
   align-items: center;
   display: flex;
-  //height: 98vh;
+  height: 98vh;
   flex-direction: column;
   justify-content: space-around;
 

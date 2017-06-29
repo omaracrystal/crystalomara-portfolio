@@ -9,6 +9,11 @@ const Home = props => (
 
     <div className="home-page-container">
 
+
+        <div className="globe globe-gradient fixed-center"></div>
+        <div className="globe globe-black fixed-center"></div>
+
+
         <div className="globe fixed-center content-wrapper">
 
             <Link to="/about" id="menu-about-a" className="menu-a white-text">
@@ -31,9 +36,6 @@ const Home = props => (
                 work
             </Link>
         </div>
-
-        <div className="globe globe-gradient fixed-center"></div>
-        <div className="globe globe-black fixed-center"></div>
 
     </div>
 
