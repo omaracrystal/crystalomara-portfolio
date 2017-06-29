@@ -22,14 +22,14 @@ const Home = props => (
 
             <div className="group">
                 <Link to="/" className="title-name white-text">
-                    CRYSTAL
+                    <h1>CRYSTAL
                     <button className="omara"></button>
-                    'MARA
+                        'MARA</h1>
                 </Link>
                 <hr/>
-                <div className="title-job">
+                <h2 className="title-job">
                     front-end developer | UX/UI
-                </div>
+                </h2>
             </div>
 
             <Link to="/work" id="menu-work-a" className="menu-a white-text">

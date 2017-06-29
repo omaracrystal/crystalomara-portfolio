@@ -1,280 +1,342 @@
-@import "styles/colors";
+/* -------------------------- NORMALIZE -------------------------- */
 
-@-webkit-keyframes glow {
-  to {
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05) inset, 0px 0px 20px $highlight;
-  }
+@import "../node_modules/normalize.css";
+
+/* -------------------------- OUTSIDE STYLESHEETS -------------------------- */
+
+
+
+/* ---------------------------- GLOBAL ---------------------------- */
+
+@import "styles/global/variables/var-colors";
+
+@import "styles/global/variables/var-fonts";
+
+@import "styles/global/variables/var-media-queries";
+
+@import "styles/global/variables/var-other";
+
+@import "styles/global/mixins/mixins-buttons";
+
+@import "styles/global/mixins/mixins-px-to-rem";
+
+@import "styles/global/base";
+
+@import "styles/global/helpers";
+
+/* -------------------------- COMPONENTS -------------------------- */
+
+@import "styles/components/buttons-and-links";
+
+@import "styles/components/work-list-menu";
+
+@import "styles/components/work-list";
+
+@import "styles/components/work-list-item";
+
+@import "styles/components/globe";
+
+/* -------------------------- CONTAINERS -------------------------- */
+
+@import "styles/containers/pages-default";
+@import "styles/containers/home-page";
+@import "styles/containers/about-page";
+@import "styles/containers/work-page";
+
+
+
+
+
+
+
+
+
+
+
+
+
+//@import "styles/colors";
+//@import "styles/resetcss";
+
+//@-webkit-keyframes glow {
+//  to {
+//    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05) inset, 0px 0px 20px $highlight;
+//  }
+//}
+
+//html {
+//  font-size: 62.5%;
+//}
+//
+//body {
+//  background-color: $black;
+//  color: $white;
+//  font-family: "Avenir Next" !important;
+//  font-size: 1.6rem;
+//  font-weight: 300;
+//  letter-spacing: .3rem;
+//}
+
+//a {
+//  color: $white;
+//  cursor: pointer;
+//  text-decoration: none !important;
+//
+//  &:hover,
+//  &:visited,
+//  &:active,
+//  &:focus {
+//    color: $black;
+//  }
+//}
+//
+//hr {
+//  border: .5px solid $black;
+//  width: 98%;
+//}
+
+//button.omara {
+//  background: #ffffff;
+//  background-image: radial-gradient(50% 50%, #a59797 30%, #ffffff 100%);
+//  border: 1px solid $white;
+//  border-radius: 50%;
+//}
+
+//.content-wrapper {
+//  z-index: 2;
+//}
+
+//.white-text a {
+//  font-size: 1.5em;
+//  color: #ffffff;
+//  font-family: "Avenir Next" !important;
+//  text-decoration: none;
+//  -webkit-transition: all 0.5s;
+//  -moz-transition: all 0.5s;
+//  transition: all 0.5s;
+//
+//  &:hover {
+//    color: #ffffff;
+//    animation: neon2 1.5s ease-in-out infinite alternate;
+//  }
+//}
+//
+//@-webkit-keyframes neon2 {
+//  from {
+//    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+//  }
+//  to {
+//    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+//  }
+//}
+
+//.white-text {
+//  color: $white;
+//
+//  &:hover,
+//  &:visited,
+//  &:active,
+//  &:focus {
+//    color: $white;
+//  }
+//
+//  &:hover {
+//    color: white;
+//    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+//    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+//    animation: neon2 1.5s ease-in-out infinite alternate;
+//  }
+//}
+
+//.space-background {
+//  background-color: $black;
+//}
+
+//.fixed-center {
+//  left: 50%;
+//  position: fixed;
+//  top: 50%;
+//  transform: translate(-50%, -50%);
+//}
+
+//.globe {
+//  align-items: center;
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: space-between;
+//  width: 90vh;
+//  height: 90vh;
+//  border-radius: 50%;
+//
+//  @media (max-width: $mq-tablet) and (orientation:portrait) {
+//    height: 90vw;
+//    width: 90vw;
+//  }
+//}
+
+@media (max-width: $mq-tablet) and (orientation:portrait) {
+
 }
 
-html {
-  font-size: 62.5%;
-}
+//.globe-black {
+//  //animation: glow 3s infinite alternate;
+//  background: url("./images/img-noise-800x800.png");
+//  background-size: contain;
+//  border-radius: 50%;
+//  transition: all 0.5s;
+//}
+//
+//.globe-gradient {
+//  background: radial-gradient(ellipse at center, #f2f2f2 2%, #090c06 86%, #0c0a04 100%, #090a05 100%);
+//  box-shadow: 0px 0px 4px #fff;
+//  border-radius: 50%;
+//  opacity: .4;
+//  z-index: 1;
+//}
 
-body {
-  background-color: $black;
-  color: $white;
-  font-family: "Avenir Next" !important;
-  font-size: 1.6rem;
-  font-weight: 300;
-  letter-spacing: .3rem;
-}
+//.home-page-container {
+//
+//  button.omara {
+//    height: 2.6rem;
+//    margin-left: .5rem;
+//    margin-right: -.7rem;
+//    width: 2.6rem;
+//  }
+//
+//  .group {
+//    text-align: center;
+//    width: 100%;
+//
+//    .title-name {
+//      font-size: 2.5rem;
+//      letter-spacing: .4rem;
+//    }
+//
+//    .title-job {
+//      font-size: 3vw;
+//    }
+//  }
+//
+//  .menu-link {
+//    font-size: 2.4rem;
+//  }
+//}
 
-a {
-  color: $white;
-  cursor: pointer;
-  text-decoration: none !important;
+//.about-page-container,
+//.work-page-container {
+//  align-items: center;
+//  display: flex;
+//  height: 98vh;
+//  flex-direction: column;
+//  justify-content: space-around;
+//
+//  button.omara {
+//    height: 1.6rem;
+//    margin-right: -.5rem;
+//    margin-left: .2rem;
+//    padding-bottom: .2rem;
+//    width: 1.6rem;
+//  }
+//
+//  .content-wrapper {
+//    align-items: center;
+//    display: flex;
+//    height: 345px;
+//    flex-direction: column;
+//    width: 288px;
+//
+//
+//    .about-pic {
+//      margin-bottom: 2rem;
+//      width: 135px;
+//      height: auto;
+//    }
+//
+//    .about-text {
+//      color: $white;
+//      font-size: 1.4rem;
+//      font-weight: 400;
+//      text-align: center;
+//      width: 99%;
+//    }
+//  }
+//
+//  .globe {
+//    width: 75vh;
+//    height: 75vh;
+//  }
+//
+//  #menu-about-link {
+//    font-size: 3rem;
+//    letter-spacing: .8rem;
+//  }
+//
+//  #menu-work-link {
+//    font-size: 2rem;
+//    letter-spacing: .6rem;
+//  }
+//}
 
-  &:hover,
-  &:visited,
-  &:active,
-  &:focus {
-    color: $black;
-  }
-}
+//.contact-wrapper {
+//  font-size: 2rem;
+//  margin-bottom: .2rem;
+//  margin-top: .5rem;
+//
+//  .fa {
+//    padding: .4rem 2rem;
+//  }
+//}
 
-hr {
-  border: .5px solid $black;
-  width: 98%;
-}
-
-button.omara {
-  background: #ffffff;
-  background-image: radial-gradient(50% 50%, #a59797 30%, #ffffff 100%);
-  border: 1px solid $white;
-  border-radius: 50%;
-}
-
-.content-wrapper {
-  z-index: 2;
-}
-
-.white-text a {
-  font-size: 1.5em;
-  color: #ffffff;
-  font-family: "Avenir Next" !important;
-  text-decoration: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-
-  &:hover {
-    color: #ffffff;
-    animation: neon2 1.5s ease-in-out infinite alternate;
-  }
-}
-
-@-webkit-keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
-  }
-}
-
-.white-text {
-  color: $white;
-
-  &:hover,
-  &:visited,
-  &:active,
-  &:focus {
-    color: $white;
-  }
-
-  &:hover {
-    color: white;
-    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-    animation: neon2 1.5s ease-in-out infinite alternate;
-  }
-}
-
-.space-background {
-  background-color: $black;
-}
-
-.fixed-center {
-  left: 50%;
-  position: fixed;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.globe {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 90vh;
-  height: 90vh;
-  border-radius: 50%;
-
-  @media (max-width: $mq-tablet) and (orientation:portrait) {
-    height: 90vw;
-    width: 90vw;
-  }
-}
-
-.globe-black {
-  //animation: glow 3s infinite alternate;
-  background: url("./images/img-noise-800x800.png");
-  background-size: contain;
-  border-radius: 50%;
-  transition: all 0.5s;
-}
-
-.globe-gradient {
-  background: radial-gradient(ellipse at center, #f2f2f2 2%, #090c06 86%, #0c0a04 100%, #090a05 100%);
-  box-shadow: 0px 0px 4px #fff;
-  border-radius: 50%;
-  opacity: .4;
-  z-index: 1;
-}
-
-.home-page-container {
-
-  button.omara {
-    height: 2.6rem;
-    margin-left: .5rem;
-    margin-right: -.7rem;
-    width: 2.6rem;
-  }
-
-  .group {
-    text-align: center;
-    width: 100%;
-
-    .title-name {
-      font-size: 2.5rem;
-      letter-spacing: .4rem;
-    }
-
-    .title-job {
-      font-size: 1.55rem;
-    }
-  }
-
-  .menu-link {
-    font-size: 2.4rem;
-  }
-}
-
-.about-page-container,
-.work-page-container {
-  align-items: center;
-  display: flex;
-  height: 98vh;
-  flex-direction: column;
-  justify-content: space-around;
-
-  button.omara {
-    height: 1.6rem;
-    margin-right: -.5rem;
-    margin-left: .2rem;
-    padding-bottom: .2rem;
-    width: 1.6rem;
-  }
-
-  .content-wrapper {
-    align-items: center;
-    display: flex;
-    height: 345px;
-    flex-direction: column;
-    width: 288px;
-
-
-    .about-pic {
-      margin-bottom: 2rem;
-      width: 135px;
-      height: auto;
-    }
-
-    .about-text {
-      color: $white;
-      font-size: 1.4rem;
-      font-weight: 400;
-      text-align: center;
-      width: 99%;
-    }
-  }
-
-  .globe {
-    width: 75vh;
-    height: 75vh;
-  }
-
-  #menu-about-link {
-    font-size: 3rem;
-    letter-spacing: .8rem;
-  }
-
-  #menu-work-link {
-    font-size: 2rem;
-    letter-spacing: .6rem;
-  }
-}
-
-.contact-wrapper {
-  font-size: 2rem;
-  margin-bottom: .2rem;
-  margin-top: .5rem;
-
-  .fa {
-    padding: .4rem 2rem;
-  }
-}
-
-.work-page-container {
-  .content-wrapper {
-    justify-content: space-around;
-  }
-
-  #menu-work-link {
-    font-size: 3rem;
-    padding-left: 1rem;
-    padding-right: 2rem;
-    text-align: left;
-  }
-
-  .technologies-list {
-    font-size: 1rem;
-    margin-left: -3rem;
-  }
-
-  .work-header-title {
-    border-left: 1px solid $white;
-    padding-left: 2rem;
-    padding-right: 1rem;
-  }
-
-  .work-header-wrapper {
-    align-items: baseline;
-    border-bottom: 1px solid $white;
-    display: flex;
-    padding-top: 1rem;
-  }
-
-  .work-project-info-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 2rem;
-  }
-
-  .work-project-text {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    padding: .5rem;
-  }
-
-  .work-project-title {
-    font-size: 18px;
-    font-weight: 500;
-    padding-top: 1.5rem;
-    width: 68%;
-    z-index: 2;
-  }
-}
+//.work-page-container {
+//  .content-wrapper {
+//    justify-content: space-around;
+//  }
+//
+//  #menu-work-link {
+//    font-size: 3rem;
+//    padding-left: 1rem;
+//    padding-right: 2rem;
+//    text-align: left;
+//  }
+//
+//  .technologies-list {
+//    font-size: 1rem;
+//    margin-left: -3rem;
+//  }
+//
+//  .work-header-title {
+//    border-left: 1px solid $white;
+//    padding-left: 2rem;
+//    padding-right: 1rem;
+//  }
+//
+//  .work-header-wrapper {
+//    align-items: baseline;
+//    border-bottom: 1px solid $white;
+//    display: flex;
+//    padding-top: 1rem;
+//  }
+//
+//  .work-project-info-wrapper {
+//    display: flex;
+//    flex-direction: row;
+//    justify-content: space-around;
+//    margin-top: 2rem;
+//  }
+//
+//  .work-project-text {
+//    background-color: rgba(0, 0, 0, 0.5);
+//    border-radius: 15px;
+//    font-size: 12px;
+//    letter-spacing: 1px;
+//    padding: .5rem;
+//  }
+//
+//  .work-project-title {
+//    font-size: 18px;
+//    font-weight: 500;
+//    padding-top: 1.5rem;
+//    width: 68%;
+//    z-index: 2;
+//  }
+//}

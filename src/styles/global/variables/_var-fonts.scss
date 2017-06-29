@@ -1,0 +1,31 @@
+////----------------------------------------------------------////
+////--------------------| *** fonts *** |--------------------////
+////--------------------------------------------------------////
+
+////***------------------ font styles ------------------**////
+$font_1: 'Avenir Next';
+$font_2: "Lato";
+$font_3: "Helvetica Neue";
+$font_4: "Arial";
+$sans-serif: "sans-serif";
+$font-awesome: FontAwesome;
+
+$family-font: $font_1, $font-2, $font_3, $font_4 $sans-serif;
+
+$bold: 600 !important;
+$font-weight-normal: 300 !important;
+
+////***------------------ font sizes ------------------**////
+$font-xsm: 12px; //~1.2rem
+$font-sm: 14px; //~1.4rem
+$font-base: 16px; //~1.6rem
+$font-md: 18px; //~1.8rem
+$font-lg: 22px; //~2.2rem
+$font-xlg: 25px; //~2.5rem
+
+$font-h1: 48px; //~4.8rem
+$font-h2: 36px; //~3.6rem
+$font-h3: 22px; //~2.2rem
+$font-h4: $font-lg; //~1.8rem
+$font-h5: $font-md; //~1.6rem
+$font-h6: $font-base; //~1.4rem

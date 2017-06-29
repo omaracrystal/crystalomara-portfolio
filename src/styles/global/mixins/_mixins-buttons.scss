@@ -1,0 +1,22 @@
+////***------------------ Button & Link Mixins ------------------**/////
+
+@mixin text-link($color, $font-size) {
+  color: $color;
+  cursor: pointer;
+  font-size: $font-size;
+  text-decoration: none !important;
+  transition: $transition-hover;
+
+  &:hover {
+    color: $white;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+  }
+}
+
+@mixin font-awesome-close-up ($font-size) {
+
+  &:hover,
+  &:focus {
+    font-size: $font-size+3px;
+  }
+}

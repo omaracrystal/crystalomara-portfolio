@@ -1,0 +1,65 @@
+.contact-wrapper {
+  font-size: 2rem;
+  margin-bottom: .2rem;
+  margin-top: .5rem;
+  z-index: 2;
+
+  .fa {
+    padding: .4rem 2rem;
+  }
+}
+
+.about-page-container,
+.work-page-container {
+  align-items: center;
+  display: flex;
+  height: 98vh;
+  flex-direction: column;
+  justify-content: space-around;
+
+  button.omara {
+    height: 1.6rem;
+    margin-right: -.5rem;
+    margin-left: .2rem;
+    padding-bottom: .2rem;
+    width: 1.6rem;
+  }
+
+  .content-wrapper {
+    align-items: center;
+    display: flex;
+    height: 345px;
+    flex-direction: column;
+    width: 288px;
+
+
+    .about-pic {
+      margin-bottom: 2rem;
+      width: 135px;
+      height: auto;
+    }
+
+    .about-text {
+      color: $white;
+      font-size: 1.4rem;
+      font-weight: 400;
+      text-align: center;
+      width: 99%;
+    }
+  }
+
+  .globe {
+    width: 75vh;
+    height: 75vh;
+  }
+
+  #menu-about-link {
+    font-size: 3rem;
+    letter-spacing: .8rem;
+  }
+
+  #menu-work-link {
+    font-size: 2rem;
+    letter-spacing: .6rem;
+  }
+}

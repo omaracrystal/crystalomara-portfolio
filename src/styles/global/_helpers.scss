@@ -1,0 +1,18 @@
+@-webkit-keyframes glow {
+  to {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05) inset, 0px 0px 20px $highlight;
+  }
+}
+
+.hide {
+  display: none !important;
+  visibility: hidden;
+}
+
+.fixed-center {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
