@@ -44,6 +44,34 @@ button.omara {
   border-radius: 50%;
 }
 
+.content-wrapper {
+  z-index: 2;
+}
+
+.white-text a {
+  font-size: 1.5em;
+  color: #ffffff;
+  font-family: "Avenir Next" !important;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+
+  &:hover {
+    color: #ffffff;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+  }
+}
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
 .white-text {
   color: $white;
 
@@ -52,6 +80,13 @@ button.omara {
   &:active,
   &:focus {
     color: $white;
+  }
+
+  &:hover {
+    color: white;
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
   }
 }
 
@@ -90,7 +125,8 @@ button.omara {
 }
 
 .globe-gradient {
-  background: radial-gradient(ellipse at center, #f7f6f4 0%,#090c06 71%,#0c0a04 85%,#0c0a04 93%,#090a05 100%);
+  background: radial-gradient(ellipse at center, #f2f2f2 2%, #090c06 86%, #0c0a04 100%, #090a05 100%);
+  box-shadow: 0px 0px 4px #fff;
   border-radius: 50%;
   opacity: .4;
   z-index: 1;
@@ -103,10 +139,6 @@ button.omara {
     margin-left: .5rem;
     margin-right: -.7rem;
     width: 2.6rem;
-  }
-
-  .content-wrapper {
-    z-index: 2;
   }
 
   .group {
@@ -150,7 +182,6 @@ button.omara {
     height: 345px;
     flex-direction: column;
     width: 288px;
-    z-index: 1;
 
 
     .about-pic {
@@ -221,7 +252,7 @@ button.omara {
     align-items: baseline;
     border-bottom: 1px solid $white;
     display: flex;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
   }
 
   .work-project-info-wrapper {
@@ -244,6 +275,6 @@ button.omara {
     font-weight: 500;
     padding-top: 1.5rem;
     width: 68%;
-    z-index: 1;
+    z-index: 2;
   }
 }
