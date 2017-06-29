@@ -1,46 +1,21 @@
-@-webkit-keyframes neon2 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
-  }
-}
-
 button.omara {
   background: $white;
   background-image: radial-gradient(50% 50%, #a59797 30%, #ffffff 100%);
   border: 1px solid $white;
   border-radius: 50%;
-}
+  height: 2vh;
+  margin-right: 1vh;
+  margin-left: 1vh;
+  width: 2vh;
 
-.white-text a {
-  font-size: 1.5em;
-  color: $white;
-  font-family: "Avenir Next" !important;
-  text-decoration: none;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-
-  &:hover {
-    color: $white;
-    animation: neon2 1.5s ease-in-out infinite alternate;
+  @media (max-width: $mq-tablet-sm) and (orientation:portrait) {
+    height: 2vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    width: 2vw;
   }
 }
 
-.white-text {
-  color: $white;
-
-  &:hover,
-  &:visited,
-  &:active,
-  &:focus {
-    color: $white;
-  }
-
-  &:hover {
-    color: $white;
-    animation: neon2 1.5s ease-in-out infinite alternate;
-  }
+.text-link {
+  @include text-link($white);
 }

@@ -1,32 +1,42 @@
 .globe {
   align-items: center;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
+  height: 90vh;
   justify-content: space-between;
   width: 90vh;
-  height: 90vh;
-  border-radius: 50%;
   z-index: 2;
+
+  &.globe-black {
+    background: url("./images/img-noise-800x800.png");
+    background-size: contain;
+    z-index: 0;
+  }
+
+  &.globe-gradient {
+    background: radial-gradient(ellipse at center, #f2f2f2 2%, #090c06 86%, #0c0a04 100%, #090a05 100%);
+    box-shadow: 0px 0px 4px #fff;
+    opacity: .4;
+    z-index: 1;
+  }
+
+  .content-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 15px;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    @media (max-width: $mq-mobile) {
+      width: 60%;
+    };
+  }
 
   @media (max-width: $mq-tablet) and (orientation:portrait) {
     height: 90vw;
     width: 90vw;
   }
-}
-
-.globe-black {
-  //animation: glow 3s infinite alternate;
-  background: url("./images/img-noise-800x800.png");
-  background-size: contain;
-  border-radius: 50%;
-  transition: all 0.5s;
-  z-index: 0;
-}
-
-.globe-gradient {
-  background: radial-gradient(ellipse at center, #f2f2f2 2%, #090c06 86%, #0c0a04 100%, #090a05 100%);
-  box-shadow: 0px 0px 4px #fff;
-  border-radius: 50%;
-  opacity: .4;
-  z-index: 1;
 }

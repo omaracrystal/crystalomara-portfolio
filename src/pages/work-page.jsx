@@ -6,14 +6,14 @@ let aboutPic = 'https://s3-us-west-2.amazonaws.com/xgrioux-portfolio-images/abou
 export default () => (
     <div className="work-page-container fixed-center">
 
-        <Link to="/" className="title-name white-text">
+        <Link to="/" className="title-name text-link">
             CRYSTAL
             <button className="omara"></button>
             'MARA
         </Link>
 
         <div className="work-header-wrapper">
-            <span id="menu-work-link" className="menu-link white-text">
+            <span id="menu-work-link" className="menu-link text-link">
                 work
             </span>
             <div className="work-header-title">
@@ -60,7 +60,7 @@ export default () => (
 
         <i className="fa fa-angle-double-down work-scroll"/>
 
-        <Link to="/about" id="menu-about-link" className="menu-link white-text">
+        <Link to="/about" id="menu-about-link" className="menu-link text-link">
             about
         </Link>
 

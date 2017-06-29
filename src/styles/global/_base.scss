@@ -27,31 +27,10 @@ body {
 }
 
 a {
-  @include text-link($primary-link-color, $font-base);
+  @include text-link($primary-link-color);
 
   * {
-    @include text-link($primary-link-color, $font-base);
-  }
-
-  &:hover,
-  &:focus {
-    .fa {
-      visibility: visible !important;
-      color: $primary-link-color !important;
-    }
-  }
-}
-
-a {
-  color: $white;
-  cursor: pointer;
-  text-decoration: none !important;
-
-  &:hover,
-  &:visited,
-  &:active,
-  &:focus {
-    color: $black;
+    @include text-link($primary-link-color);
   }
 }
 

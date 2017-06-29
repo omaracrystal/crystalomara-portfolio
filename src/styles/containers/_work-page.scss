@@ -1,7 +1,4 @@
 .work-page-container {
-  .content-wrapper {
-    justify-content: space-around;
-  }
 
   #menu-work-link {
     font-size: 3rem;
@@ -12,7 +9,6 @@
 
   .technologies-list {
     font-size: 1rem;
-    margin-left: -3rem;
   }
 
   .work-header-title {
@@ -36,11 +32,9 @@
   }
 
   .work-project-text {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
     font-size: 12px;
     letter-spacing: 1px;
-    padding: .5rem;
+    font-weight: $bold;
   }
 
   .work-project-title {

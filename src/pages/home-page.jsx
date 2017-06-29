@@ -14,15 +14,15 @@ const Home = props => (
         <div className="globe globe-black fixed-center"></div>
 
 
-        <div className="globe fixed-center content-wrapper">
+        <div className="globe fixed-center">
 
-            <Link to="/about" id="menu-about-a" className="menu-a white-text">
+            <Link to="/about" className="text-link">
                 about
             </Link>
 
             <div className="group">
-                <Link to="/" className="title-name white-text">
-                    <h1>CRYSTAL
+                <Link to="/" className="text-link">
+                    <h1 className="title-name">CRYSTAL
                     <button className="omara"></button>
                         'MARA</h1>
                 </Link>
@@ -32,7 +32,7 @@ const Home = props => (
                 </h2>
             </div>
 
-            <Link to="/work" id="menu-work-a" className="menu-a white-text">
+            <Link to="/work" className="text-link">
                 work
             </Link>
         </div>

@@ -12,12 +12,6 @@ class App extends Component {
     return (
 
         <div>
-            <header>
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-
-            </header>
-
             <main>
                 <Route exact path="/" component={HomePage} />
                 <Route exact path="/about" component={AboutPage} />
