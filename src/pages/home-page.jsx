@@ -14,7 +14,7 @@ const Home = props => (
         <div className="globe globe-black fixed-center"></div>
 
 
-        <div className="globe fixed-center">
+        <div className="globe globe-home fixed-center">
 
             <Link to="/about" className="text-link">
                 about

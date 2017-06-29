@@ -1,17 +1,8 @@
 .home-page-container {
 
   button.omara {
-    height: 6vh;
-    margin-left: 1vh;
-    margin-right: .5vh;
-    width: 6vh;
-
-    @media (max-width: $mq-tablet) and (orientation:portrait) {
-      height: 6vw;
-      margin-left: 1vw;
-      margin-right: .5vw;
-      width: 6vw;
-    }
+    @include scale-object(6,6);
+    @include scale-margin(0,.5,0,1);
   }
 
   .group {
@@ -20,32 +11,20 @@
 
     h1.title-name {
       margin: 0;
-      letter-spacing: 2vh;
-      font-size: 6vh;
-
-      @media (max-width: $mq-tablet) and (orientation:portrait) {
-        font-size: 6vw;
-        letter-spacing: 2vw;
-      }
+      @include scale-text(6,2);
     }
 
     h2.title-job {
       margin: 0;
-      letter-spacing: .8vh;
-      font-size: 4vh;
-
-      @media (max-width: $mq-tablet) and (orientation:portrait) {
-        font-size: 4vw;
-        letter-spacing: .8vw;
-      }
+      @include scale-text(4,.8);
     }
   }
 
-  .text-link {
-    font-size: 4vh;
+  .globe-home {
+    background: rgba(0,0,0,.2);
+  }
 
-    @media (max-width: $mq-tablet) and (orientation:portrait) {
-      font-size: 4vw;
-    }
+  .text-link {
+    @include scale-text(6,.5);
   }
 }

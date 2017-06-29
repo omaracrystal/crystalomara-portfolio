@@ -3,10 +3,9 @@
   border-radius: 50%;
   display: flex;
   flex-direction: column;
-  height: 90vh;
   justify-content: space-between;
-  width: 90vh;
   z-index: 2;
+  @include scale-object(90,90);
 
   &.globe-black {
     background: url("./images/img-noise-800x800.png");
@@ -33,10 +32,5 @@
     @media (max-width: $mq-mobile) {
       width: 60%;
     };
-  }
-
-  @media (max-width: $mq-tablet) and (orientation:portrait) {
-    height: 90vw;
-    width: 90vw;
   }
 }

@@ -92,3 +92,44 @@ body {
     #{$property}: $rem; /* 9 */
   }
 }
+
+
+
+////***------------------ Scalable Mixins ------------------**////
+
+//only take numbers
+@mixin scale-object($height, $width) {
+  height: $height+vh;
+  width: $width+vh;
+
+  @media (max-width: $mq-tablet) and (orientation:portrait) {
+    height: $height+vw;
+    width: $width+vw;
+  }
+}
+
+@mixin scale-text($font-size, $letter-spacing) {
+  font-size: $font-size+vh;
+  letter-spacing: $letter-spacing+vh;
+
+  @media (max-width: $mq-tablet) and (orientation:portrait) {
+    font-size: $font-size+vw;
+    letter-spacing: $letter-spacing+vw;
+  }
+}
+
+@mixin scale-margin($margin-top, $margin-right, $margin-bottom, $margin-left) {
+  margin: $margin-top+vh $margin-right+vh $margin-bottom+vh $margin-left+vh;
+
+  @media (max-width: $mq-tablet) and (orientation:portrait) {
+    margin: $margin-top+vw $margin-right+vw $margin-bottom+vw $margin-left+vw;
+  }
+}
+
+@mixin scale-padding($padding-top, $padding-right, $padding-bottom, $padding-left) {
+  margin: $padding-top+vh $padding-right+vh $padding-bottom+vh $margin-left+vh;
+
+  @media (max-width: $mq-tablet) and (orientation:portrait) {
+    margin: $padding-top+vw $padding-right+vw $padding-bottom+vw $padding-left+vw;
+  }
+}

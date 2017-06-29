@@ -1,19 +1,10 @@
 button.omara {
+  @include scale-object(3,3);
+  @include scale-margin(0,.3,0,1);
   background: $white;
   background-image: radial-gradient(50% 50%, #a59797 30%, #ffffff 100%);
   border: 1px solid $white;
   border-radius: 50%;
-  height: 2vh;
-  margin-right: 1vh;
-  margin-left: 1vh;
-  width: 2vh;
-
-  @media (max-width: $mq-tablet-sm) and (orientation:portrait) {
-    height: 2vw;
-    margin-right: 1vw;
-    margin-left: 1vw;
-    width: 2vw;
-  }
 }
 
 .text-link {

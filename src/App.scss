@@ -18,7 +18,7 @@
 
 @import "styles/global/mixins/mixins-buttons";
 
-@import "styles/global/mixins/mixins-px-to-rem";
+@import "styles/global/mixins/mixins-scale";
 
 @import "styles/global/base";
 
@@ -45,7 +45,3 @@
 @import "styles/containers/about-page";
 
 @import "styles/containers/work-page";
-
-/* -------------------------- MEDIA QUERIES -------------------------- */
-
-@import "styles/global/mq-portrait";

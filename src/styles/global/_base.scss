@@ -4,10 +4,9 @@ html {
 
 body {
   background-color: $site-background-color;
+  box-sizing: border-box;
   font-family: 'Avenir Next', 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: $font-weight-normal;
-  box-sizing: border-box;
-  //font-family: $family-font;
   @include rem(font-size, $font-base);
   line-height: 1.5;
   color: $primary-text-color;

@@ -20,4 +20,8 @@
     font-size: 2rem;
     letter-spacing: .6rem;
   }
+
+  .title-name {
+    @include scale-text(3,.3);
+  }
 }
